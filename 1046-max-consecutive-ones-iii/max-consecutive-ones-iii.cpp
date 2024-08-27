@@ -7,7 +7,7 @@ public:
                 zero++;
             }
             if(zero>k){
-                while(nums[l]!=0 &&l<=r){
+                while(nums[l]!=0 &&l<nums.size()){
                     l++;
                 }
                 zero--;
