@@ -9,13 +9,11 @@ public:
             if (map.size() <= 2) {
                 maxlen = max(maxlen, i - j + 1);
             } else {
-              
-                    map[fruits[j]]--;
-                    if (map[fruits[j]] == 0) {
-                        map.erase(fruits[j]);
-                    }
-                    j++;
-            
+                map[fruits[j]]--;
+                if (map[fruits[j]] == 0) {
+                    map.erase(fruits[j]);
+                }
+                j++;
             }
         }
         return maxlen;
